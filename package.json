@@ -47,7 +47,8 @@
     }
   ],
   "dependencies": {
-    "yamlparser": ">=0.0.2"
+    "yamlparser": ">=0.0.2",
+    "uap-core": "git://github.com/ua-parser/uap-core.git#c7c5284a1fc25e3345b0c5d8fc323cb01373dd13"
   },
   "devDependencies": {
     "mocha": "*"
