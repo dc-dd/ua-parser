@@ -3,7 +3,7 @@ var path = require('path'),
     yaml = require('yamlparser'),
     Results = require('./lib/results').BackwardsCompatResults;
 
-var file = path.join(__dirname, '..', 'node_modules', 'uap-core', 'regexes.yaml'),
+var file = require.resolve(path.join('uap-core', 'regexes.yaml')),
     regexes = fs.readFileSync(file, 'utf8');
 
 regexes = yaml.eval(regexes);
